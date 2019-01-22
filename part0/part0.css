@@ -1,0 +1,22 @@
+.link:hover {
+    color: red;
+    font-size: large;
+}
+
+.list {
+    margin-top: 0px;
+    list-style: none;
+    font-size: larger;
+}
+
+table {
+    
+}
+
+#car-row {
+    background: #616161;
+}
+
+#car-image {
+    width: 300px;
+}

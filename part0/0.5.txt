@@ -1,0 +1,34 @@
+user->browser:
+note left of browser
+user navigates to
+https://fullstack-exampleapp.herokuapp.com/spa
+end note
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/spa
+server->browser: status 200, html code of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.css
+server->browser: status 200, stylesheet of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server->browser: status 200, javascript of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/data.json
+server->browser: status 200, database in json format
+
+user->browser:
+note left of browser
+user fills the form and clicks Talleta
+end note
+
+browser->server: POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note left of server
+server receives a new note
+end note
+
+server->browser: status 201, "note created"
+
+note left of browser
+browser adds the new note to the DOM without reloading the whole page
+end note

@@ -1,0 +1,19 @@
+user->browser:
+note left of browser
+user navigates to https://fullstack-exampleapp.herokuapp.com/notes
+end note
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/notes
+server->browser: status 200, html code of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.css
+server->browser: status 200, stylesheet of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/main.js
+server->browser: status 200, javascript of the page
+
+browser->server: GET https://fullstack-exampleapp.herokuapp.com/data.json
+server->browser: status 200, database of the app in json format
+
+note left of browser
+browser shows the notes page with data fetched from json database
