@@ -2,6 +2,7 @@
   "name": "basics-of-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://timblo.us/wamp2019/part1",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -21,5 +22,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "terser": "^3.14.1"
+  }
 }

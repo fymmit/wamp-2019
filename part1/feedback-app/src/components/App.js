@@ -35,7 +35,7 @@ class App extends Component {
         if (feedbackReceived) {
             stats = <Statistics options={this.state.feedback.options} />
         } else {
-            stats = <div></div>
+            stats = <div>No feedback has been given.</div>
         }
         return (
             <div>
